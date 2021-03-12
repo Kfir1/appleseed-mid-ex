@@ -74,16 +74,62 @@ nav ul{
 
 }
 
-nav ul li{
-    padding: 0.7%;
+nav  ul li{
+    
     background-color: gray;
     border-right: solid black 2px;
+
     
 }
+
+.drop-down-content ul{
+    display: flex;
+    flex-direction: column;
+}
+
 
 a{
     text-decoration: none;
     color: white;
     display: block;
-
+    font-family: 'Arial (Hebrew)', Arial;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 7px;
+    /* background-color: blue; */
 }
+
+.drop-down-content{
+    display: none;
+}
+
+.drop-down:hover > .drop-down-content{
+    display: block;
+}
+
+.drop-down a:hover{
+    text-decoration: underline;
+
+    color: rgb(45, 118, 167);
+}
+
+.drop-down-content a:hover{
+    text-decoration: underline;
+    background-color: rgb(161, 159, 159);
+    color: rgb(45, 118, 167);
+}
+
+
+
+
+/* .drop-down-content{
+    position: absolute; 
+     display: none;
+}
+
+.drop-down ul{
+display: flex;
+flex-direction: column;
+ position: absolute;
+background-color: red; 
+} */
