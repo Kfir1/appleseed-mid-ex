@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- change div to semantic tag -->
     <main>  
         <header>
             <div class="upper-header">
+                <div class="logo"><a href="#"><img src="images/images/paz_logo.png" alt=""></a></div>
                 <form>
                     <div class="language-button-content">
                         <button type="button" class="english-button">English</button>
@@ -227,25 +229,58 @@
                 <div class="col-33">
                     <div class="content">
                         <div class="reduced-size-content">
-                            <div><h2>כרטיס אשראי שופרסל וכרטיס אשראי יש</h2></div>
-                            <div><img src="images/images/paz_250x110059890678.jpg" alt=""></div>
-                           <div><a class="extra-details" href="">לפרטים נוספים<span class="rotate">∴</span></a></div>
+                            <div id="interval" onload="setInt()">
+                                <div><h2>טיפז</h2></div>
+                                <div><img src="images/images/250X110668568400.jpg" alt=""></div>
+                                <div><a class="extra-details" href="">לפרטים נוספים<span class="rotate">∴</span></a></div>
+                            </div>
+                            <div id="second-interval">
+                                <div><h2>שטחי מסחר פז סנטר</h2></div>
+                                <div><img src="images/images/paz_250x110103131473.jpg" alt=""></div>
+                                <div><a class="extra-details" href="">לפרטים נוספים<span class="rotate">∴</span></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-33">
                     <div class="content">
                         <div class="reduced-size-content">
-                            <div><h2>כרטיס אשראי שופרסל וכרטיס אשראי יש</h2></div>
-                            <div><img src="images/images/paz_250x110059890678.jpg" alt=""></div>
-                           <div><a class="extra-details" href="">לפרטים נוספים<span class="rotate">∴</span></a></div>
-                        </div>
-                    </div>
+                            <div><h2>התחנות שלנו בדרך שלך</h2></div>
+                            <div class="israel-Regions">
+                                <div>
+                                    <div><img class="israel-map" src="images/images/map-transparent.png" alt=""></div>
+                                </div>
+                                <div>
+
+                                </div>
+                                <div class="col-content-israel-Regions">
+                                    <div><a class="extra-details" href="">צפון<span class="rotate">∴</span></a></div> 
+                                    <div><a class="extra-details" href="">מרכז<span class="rotate">∴</span></a></div> 
+                                    <div><a class="extra-details" href="">דרום<span class="rotate">∴</span></a></div> 
+                                </div>       
+                            </div>
+                         </div>
+                     </div>
                 </div>
             </div>
         </section>
 
-        <footer></footer>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="images/images/fb_icon.png" alt=""></a></li>
+                    <li><a href="">עמוד הבית</a></li>
+                    <li><a href="">מחירונים</a></li>
+                    <li><a href="">קריירה</a></li>
+                    <li><a href="">תנאי שימוש</a></li>
+                    <li><a href="">נגישות</a></li>
+                    <li><a href="">מפת האתר</a></li>
+                    <li><a href="">תור קשר</a></li>
+                    <li><a href="">שטחי מחסר</a></li>
+                    <li><a href="">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+                </ul>
+            </nav>
+        </footer>
 
     </main>
 </body>

@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 100%;
     
 }
@@ -23,12 +23,21 @@ header{
     border: 3px solid gray;
     height: 11.5%;
     background: linear-gradient(rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
+z-index: 666;
 }
 
+.upper-header{
+    position: relative;
+}
+.upper-header .logo{
+position: absolute;
+right: 0;
+top: 40%;
+}
 
 .upper-header, .lower-header{
     height: 50%;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     width: 47%;
     margin-left: auto;
     margin-right: auto;
@@ -38,18 +47,18 @@ section{
    
     width: 48%;
     height: 80%;
-    margin: 0.5% auto 47px auto;
+    margin: 0.5% auto 44.9px auto;
 }
  
 .row{
-    border: yellow solid 3px;
+    /* border: yellow solid 3px; */
     height: 50%;
     display: flex;
     flex-direction: row;
 }
 
 .col-33{
-    border: black solid 3px;
+    /* border: black solid 3px; */
     width: 33.333%;
     padding: 1%;
 }
@@ -57,27 +66,21 @@ section{
     width: 33.33%;
 }
 
-footer{
-  bottom: 0;
-  height: 27px; 
-  background: linear-gradient(0deg, rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%); 
-   
-}
 
-
-nav{
+header nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-nav ul{
+header nav ul{
   
     display: flex;
     list-style-type: none;
 
 }
 
-nav  ul li{
+header nav ul li{
+
     border-right: solid white 2px; 
 }
 
@@ -94,7 +97,7 @@ a{
     font-family: 'Arial (Hebrew)', Arial;
     font-weight: bold;
     font-size: 0.9rem;
-    padding: 7px;
+   
     /* background-color: blue; */
     height: 100%;        /*full height of -li-*/
     padding: 12px;
@@ -121,6 +124,9 @@ a{
     background-color: rgb(161, 159, 159);
     color: rgb(45, 118, 167);
     
+}
+.drop-down-content a:active{
+background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
 }
 
 .english-button{
@@ -168,7 +174,7 @@ form{
 }
 
 a:active{
-    background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
+
     box-shadow: 0 4px #666;
     transform: translateY(4px);
 }
@@ -231,6 +237,12 @@ p{
   text-decoration: underline;
 }
 
+.grey-background-content div a:hover{
+    text-decoration: underline;
+    color: rgb(22, 73, 107);
+    
+}
+
 .grey-background-content div:last-child{
     margin-left: 2%;
 
@@ -239,6 +251,11 @@ p{
 
 .grey-background-content div a button{
     background-color: transparent;  /* override background-color problem */
+    cursor: pointer;
+}
+.grey-background-content div a button:hover{
+    text-decoration: underline;
+    color: rgb(22, 73, 107);
 }
 
 /* 
@@ -283,3 +300,46 @@ padding-top: 5%;
      color: orange;
      font-size: 19px;
  }
+
+ 
+div .extra-details .rotate:hover{
+    text-decoration: underline;
+    color: rgb(22, 73, 107);
+ }
+/* not working */
+ /* div .extra-details:hover{
+    text-decoration: underline;
+    color: rgb(204, 28, 28);
+ } */
+
+ .second-interval{
+     display: none;
+ }
+
+
+ .israel-map{
+    float: left;
+    max-width: 80px;
+    max-height: 170px;
+
+ }
+
+/* can't be position: fixed */
+footer{
+    bottom: 0;
+    height: 29px; 
+    background: linear-gradient(0deg, rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%); 
+  }
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+} 
+
+footer ul li a{
+    color: white;
+    border-right: solid 2px white;
+   font-weight: lighter;
+    
+}
