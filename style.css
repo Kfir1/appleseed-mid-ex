@@ -6,9 +6,11 @@
     color: white;
 }
 
+
 body{
     height: 100vh;
     width: 100vw;
+    
 }
 
 main{
@@ -34,10 +36,9 @@ header{
            
 section{
    
-    width: 47%;
-    height: 73%;
-    margin: 3% auto 4px auto;
-    z-index: -1;
+    width: 51%;
+    height: 80%;
+    margin: 0.5% auto 47px auto;
 }
  
 .row{
@@ -48,8 +49,9 @@ section{
 }
 
 .col-33{
-    border: yellow solid 3px;
+    border: black solid 3px;
     width: 33.333%;
+    padding: 1%;
 }
 .row .col-33 .content{
     width: 33.33%;
@@ -100,7 +102,7 @@ a{
 
 .drop-down-content{
     display: none;
-  
+
 }
 
 .drop-down:hover > .drop-down-content{
@@ -147,6 +149,7 @@ a{
 .search-bar-content input{
     border-top-right-radius: 9px;
     width: 113px;
+    color: black;
 }
 
 button:active{
@@ -165,8 +168,8 @@ form{
 }
 
 a:active{
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
+    background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
+    box-shadow: 0 4px #666;
     transform: translateY(4px);
 }
 
@@ -201,13 +204,14 @@ a:active{
     position: absolute;
     right: 3%;
     bottom: 2%;
-    left: 13%;
-    top: 70%;
-    padding-left: 20%;
-    padding-bottom: 2%;
+    left: 16%;
+    top: 69%;
+    padding: 0.5% 3% 2% 0;
     opacity: 0.9;
     border-bottom-right-radius: 20px;
+    overflow: hidden;    /* on parent of h1 and p */
 }
+   
 
 h1{
   font-size: 100%;
@@ -215,7 +219,29 @@ h1{
 }
 p{
     font-size: 80%;
-    font-weight: bold;
-  
+    padding-left: 1%;
+    font-family: 'Arial (Hebrew)', Arial;
 }
 
+
+/* need to change a color when not in :hover */
+.grey-background-content div a{
+    float: left;
+    padding: 0%;
+  text-decoration: underline;
+}
+
+.grey-background-content div:last-child{
+    margin-left: 2%;
+
+    
+}
+
+.grey-background-content div a button{
+    background-color: transparent;  /* override background-color problem */
+}
+
+/* 
+.rotate{
+    transform: rotate(90deg);
+} */
