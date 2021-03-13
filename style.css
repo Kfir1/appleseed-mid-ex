@@ -21,7 +21,7 @@ main{
 
 header{
     border: 3px solid gray;
-    height: 10%;
+    height: 11.5%;
     background: linear-gradient(rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
 }
 
@@ -36,7 +36,7 @@ header{
            
 section{
    
-    width: 51%;
+    width: 48%;
     height: 80%;
     margin: 0.5% auto 47px auto;
 }
@@ -59,9 +59,9 @@ section{
 
 footer{
   bottom: 0;
-  height: 40px; 
+  height: 27px; 
   background: linear-gradient(0deg, rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%); 
-    
+   
 }
 
 
@@ -245,3 +245,41 @@ p{
 .rotate{
     transform: rotate(90deg);
 } */
+
+
+.row .col-33 .content .reduced-size-content{
+    height: 60%;
+    background: linear-gradient(90deg, rgba(236,234,234,1) 0%, rgba(236,231,231,1) 58%);
+    width: 100%;
+    border-top-right-radius: 20px; 
+    padding: 3% 3%;
+}
+
+h2{
+    color: rgb(76, 90, 99);
+    border-bottom: solid 2px rgb(202, 211, 221);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial (Hebrew)', Arial;
+    padding-bottom: 3%;
+}
+
+.row .col-33 .content .reduced-size-content div img{
+
+padding-top: 5%;
+
+}
+
+/* a = .extra-details in lower row of section*/
+.row .col-33 .content .reduced-size-content div .extra-details{
+      color: rgb(92, 85, 85);
+      font-weight: lighter;
+      text-decoration: underline;
+      float: left;
+}
+
+ /* .extra-details  .rotate -> ∴ */
+ .extra-details  .rotate{
+     color: orange;
+     font-size: 19px;
+ }
