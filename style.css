@@ -23,7 +23,7 @@ header{
     border: 3px solid gray;
     height: 11.5%;
     background: linear-gradient(rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
-z-index: 666;
+
 }
 
 .upper-header{
@@ -37,7 +37,7 @@ top: 40%;
 
 .upper-header, .lower-header{
     height: 50%;
-    /* border: black solid 2px; */
+    /* border: black solid 2px; for frame*/
     width: 47%;
     margin-left: auto;
     margin-right: auto;
@@ -51,14 +51,14 @@ section{
 }
  
 .row{
-    /* border: yellow solid 3px; */
+    /* border: yellow solid 3px;  for frame */
     height: 50%;
     display: flex;
     flex-direction: row;
 }
 
 .col-33{
-    /* border: black solid 3px; */
+    /* border: black solid 3px;  for frame */
     width: 33.333%;
     padding: 1%;
 }
@@ -69,13 +69,14 @@ section{
 
 header nav{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 header nav ul{
   
     display: flex;
     list-style-type: none;
+    z-index: 999999999;
 
 }
 
@@ -105,13 +106,13 @@ a{
 
 .drop-down-content{
     display: none;
-
+    z-index: 666;
 }
 
 .drop-down:hover > .drop-down-content{
     display: block;
     background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
-    z-index: 1;
+    z-index: 999;
 }
 
 .drop-down a:hover{
@@ -258,10 +259,12 @@ p{
     color: rgb(22, 73, 107);
 }
 
-/* 
+
+/* 3 dots rotation not working */
 .rotate{
     transform: rotate(90deg);
-} */
+} 
+
 
 
 .row .col-33 .content .reduced-size-content{
@@ -312,7 +315,7 @@ div .extra-details .rotate:hover{
     color: rgb(204, 28, 28);
  } */
 
- .second-interval{
+ #second-interval{
      display: none;
  }
 
@@ -324,10 +327,12 @@ div .extra-details .rotate:hover{
 
  }
 
-/* can't be position: fixed */
+
 footer{
+    width: 100%;
+    position: fixed;
     bottom: 0;
-    height: 29px; 
+    height: 40px; 
     background: linear-gradient(0deg, rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%); 
   }
 footer nav ul{
