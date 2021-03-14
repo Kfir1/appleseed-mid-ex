@@ -21,9 +21,11 @@ main{
 
 header{
     border: 3px solid gray;
-    height: 11.5%;
+    /* height: 11.5%; */
+    height: 110px;
     background: linear-gradient(rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
-
+    position: relative;
+    z-index: 54;
 }
 
 .upper-header{
@@ -32,22 +34,26 @@ header{
 .upper-header .logo{
 position: absolute;
 right: 0;
-top: 40%;
+/* top: 40%; */
+top: 20px;
 }
 
 .upper-header, .lower-header{
     height: 50%;
     /* border: black solid 2px; for frame*/
-    width: 47%;
+    /* width: 47%; */
+    width: 990px;
     margin-left: auto;
     margin-right: auto;
 }
            
 section{
    
-    width: 48%;
-    height: 80%;
-    margin: 0.5% auto 44.9px auto;
+    /* width: 48%; */
+    width: 1000px;
+    /* height: 80%; */
+    height: 800px;
+    margin: 25px auto 44.9px auto;
 }
  
 .row{
@@ -60,7 +66,8 @@ section{
 .col-33{
     /* border: black solid 3px;  for frame */
     width: 33.333%;
-    padding: 1%;
+    /* padding: 1%; */
+    padding: 10px;
 }
 .row .col-33 .content{
     width: 33.33%;
@@ -70,24 +77,29 @@ section{
 header nav{
     display: flex;
     justify-content: flex-end;
+    margin: 0 auto;
+
 }
 
 header nav ul{
   
     display: flex;
     list-style-type: none;
-    z-index: 999999999;
-
+    z-index: 999999999;   /* fixed menu behind pics problem */
 }
 
 header nav ul li{
-
-    border-right: solid white 2px; 
+    
+    border-right: solid white 1px; 
 }
 
 .drop-down-content ul{
     display: flex;
     flex-direction: column;
+}
+
+.drop-down a{
+    padding: 21px;
 }
 
 
@@ -97,22 +109,26 @@ a{
     display: block;
     font-family: 'Arial (Hebrew)', Arial;
     font-weight: bold;
-    font-size: 0.9rem;
-   
+    font-size: 0.9rem; 
     /* background-color: blue; */
     height: 100%;        /*full height of -li-*/
-    padding: 12px;
+    padding: 14px;
 }
+
+
+
 
 .drop-down-content{
     display: none;
     z-index: 666;
+    position: absolute;     /* fix drop down menu not starting from start of the parent */
 }
 
 .drop-down:hover > .drop-down-content{
     display: block;
     background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
     z-index: 999;
+  
 }
 
 .drop-down a:hover{
@@ -124,8 +140,9 @@ a{
     text-decoration: underline;
     background-color: rgb(161, 159, 159);
     color: rgb(45, 118, 167);
-    
 }
+
+
 .drop-down-content a:active{
 background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
 }
@@ -148,15 +165,26 @@ background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 
     cursor: pointer;
     /*added for press effect*/
 }
-.search-button{
+
+
+.search-img{
     cursor: pointer;
-   
+    height: 26px;
 }
+
+
 
 .search-bar-content input{
     border-top-right-radius: 9px;
-    width: 113px;
+    width: 160px;
+    height: 28px;
     color: black;
+    border: gray solid 2px;
+}
+
+
+.search-bar-content{
+    display: flex;
 }
 
 button:active{
@@ -176,7 +204,6 @@ form{
 
 a:active{
 
-    box-shadow: 0 4px #666;
     transform: translateY(4px);
 }
 
@@ -209,11 +236,16 @@ a:active{
     z-index: 1;
     background-color: grey;
     position: absolute;
-    right: 3%;
-    bottom: 2%;
-    left: 16%;
-    top: 69%;
-    padding: 0.5% 3% 2% 0;
+    /* right: 3%; */
+    right: 8px;
+    /* bottom: 2%; */
+    bottom: 10px;
+    /* left: 16%; */
+    left: 40px;
+    /* top: 69%; */
+    top: 270px;
+    /* padding: 0.5% 3% 2% 0; */
+    padding: 3px 11px 2px 22px;
     opacity: 0.9;
     border-bottom-right-radius: 20px;
     overflow: hidden;    /* on parent of h1 and p */
@@ -221,20 +253,22 @@ a:active{
    
 
 h1{
-  font-size: 100%;
+  /* font-size: 100%; */
+    font-size: 16px;
     font-weight: bold;
 }
 p{
-    font-size: 80%;
-    padding-left: 1%;
+    /* font-size: 80%; */
+    font-size: 13px;
+    /* padding-left: 1%; */
     font-family: 'Arial (Hebrew)', Arial;
 }
 
 
-/* need to change a color when not in :hover */
+/* need to change -a- color when not in :hover */
 .grey-background-content div a{
     float: left;
-    padding: 0%;
+    padding: 0px;
   text-decoration: underline;
 }
 
@@ -245,13 +279,12 @@ p{
 }
 
 .grey-background-content div:last-child{
-    margin-left: 2%;
-
-    
+    /* margin-left: 2%;     */
+    margin-left: 3px;
 }
 
 .grey-background-content div a button{
-    background-color: transparent;  /* override background-color problem */
+    background-color: transparent;  override background-color problem
     cursor: pointer;
 }
 .grey-background-content div a button:hover{
@@ -262,17 +295,21 @@ p{
 
 /* 3 dots rotation not working */
 .rotate{
-    transform: rotate(90deg);
+    transform: rotate(270deg);
+    display: inline-block;    /* without in line block it will not rotate */
+    
 } 
 
 
 
 .row .col-33 .content .reduced-size-content{
-    height: 60%;
-    background: linear-gradient(90deg, rgba(236,234,234,1) 0%, rgba(236,231,231,1) 58%);
+    /* height: 60%; */
+    height: 235px;
+    background: linear-gradient(90deg, rgba(235,235,235,1) 0%, rgba(232,232,232,1) 71%);
     width: 100%;
     border-top-right-radius: 20px; 
-    padding: 3% 3%;
+    /* padding: 3% 3%; */
+    padding: 10px 25px;
 }
 
 h2{
@@ -295,8 +332,14 @@ padding-top: 5%;
       color: rgb(92, 85, 85);
       font-weight: lighter;
       text-decoration: underline;
-      float: left;
+    
 }
+
+
+/* .row .col-33 .content .reduced-size-content div .extra-details:last-child{
+    float: right;
+} */
+
 
  /* .extra-details  .rotate -> ∴ */
  .extra-details  .rotate{
@@ -304,7 +347,11 @@ padding-top: 5%;
      font-size: 19px;
  }
 
- 
+ .extra-details:hover{
+    text-decoration: underline;
+    color: rgb(22, 73, 107);
+ }
+
 div .extra-details .rotate:hover{
     text-decoration: underline;
     color: rgb(22, 73, 107);
@@ -314,6 +361,8 @@ div .extra-details .rotate:hover{
     text-decoration: underline;
     color: rgb(204, 28, 28);
  } */
+
+
 
  #second-interval{
      display: none;
@@ -334,7 +383,8 @@ footer{
     bottom: 0;
     height: 40px; 
     background: linear-gradient(0deg, rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%); 
-  }
+    z-index: 9999999;
+}
 footer nav ul{
     display: flex;
     flex-direction: row;
@@ -344,7 +394,99 @@ footer nav ul{
 
 footer ul li a{
     color: white;
-    border-right: solid 2px white;
+    border-right: solid 1px white;
    font-weight: lighter;
     
+}
+
+footer nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(30, 89, 128);
+} 
+
+
+
+/* contact page css __________________________*/
+
+
+aside{
+    border: solid 2px black;
+    width: 900px;
+    margin-top: 32px;
+    height: 426px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: brown;
+}
+
+
+aside a{
+    color: black;
+}
+
+
+aside div{
+    border: solid red 2px;
+    color: black;
+}
+
+.aside-menu{
+width: 143px;
+}
+
+.aside-form{
+width: 464px;
+}
+
+.aside-contact{
+width: 293px;
+}
+
+.aside-menu a{
+    color: black;
+    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    margin-left: 22px;
+    font-weight: normal;
+}
+
+.arrow-pic{
+    height: 9px;
+    position: absolute;
+    top: 165px;
+}
+
+.site-tree a{
+  font-weight: lighter;
+  font-size: 12px;
+    color: black;
+    padding: 0 0 14px 14px;
+}
+
+h3{
+font-weight: bold;
+border-bottom: solid 1px gray;
+}
+
+.form{
+    margin: 11px 6px 0 69px;
+    height: 335px;
+    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    border-top-right-radius: 40px;
+}
+
+h3{
+    color: black;
+}
+
+
+
+.form div div p{
+    color: black;
+}
+
+.form div div{
+    padding-right: 20px;
 }

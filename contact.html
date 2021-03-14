@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <!-- change div to semantic tag -->
     <main>  
         <header>
             <div class="upper-header">
@@ -19,8 +17,8 @@
                         <button type="button" class="english-button">English</button>
                     </div>
                     <div class="search-bar-content">    
-                        <input type="text" name="search" placeholder="רשום מילת חיפוש"><img class="search-img" src="images/images/search_button.png" alt="">
-                            <!-- closed the space between input and img in code same as in on page because inline block element -->
+                        <input type="text" name="search" placeholder="רשום מילת חיפוש">
+                        <button type="button" id="" class="search-button"><img src="images/images/search_button.png" alt=""></button>
                     </div>
                 </form>
             </div>
@@ -175,111 +173,50 @@
             </nav>
         </header>
         
-   
-        <section>
-            <div class="row">
-                <div class="col-33">
-                    <div class="content">
-                        <img src="images/images/1908364606615453350.JPG" alt="no pic">
-                        <!-- <img class="img-grey-on-top" src="images/images/hp_tab_text_bg.png" alt="no pic"> -->
-                        <div class="grey-background-content">
-                            <div>
-                                <div><h1>קמעונאות ומסחר</h1></div>
-                                <div><p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p></div>
-                                <div><a href="#">קרא עוד<span class="rotate">∴</span></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="images/images/Picture-046410251500.jpg" alt="monkey">
-                        <div class="grey-background-content">
-                            <div>
-                                <div><h1>זיקוק</h1></div>
-                                <div><p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט... </p></div>
-                                <div><a href="#">קרא עוד<span class="rotate">∴</span></a></div>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-                <div class="col-33">
-                    <div class="content">
-                        <img src="images/images/╫ñ╫צ╫º╫¿_-291_354410564000.jpg" alt="no pic">
-                        <div class="grey-background-content">
-                            <div>
-                                <div><h1>תעשיות ושירותים</h1></div>
-                                <div><p>חת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p></div>
-                                <div><a href="#">קרא עוד<span class="rotate">∴</span></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <aside>
+            <div class="aside-menu">
+                <ul>
+                    <li>
+                        <a href="#">צור קשר</a><img class="arrow-pic" src="images/images/wm_tb_prv_on.png" alt="no pic">
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-33">
-                    <div class="content">
-                        <div class="reduced-size-content">
-                            <div><h2>כרטיס אשראי שופרסל וכרטיס אשראי יש</h2></div>
-                            <div><img src="images/images/paz_250x110059890678.jpg" alt=""></div>
-                           <div><a class="extra-details" href="#">לפרטים נוספים<span class="rotate">∴</span></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-33">
-                    <div class="content">
-                        <div class="reduced-size-content">
-                            <div id="interval">
-                                <div><h2>טיפז</h2></div>
-                                <div><img src="images/images/250X110668568400.jpg" alt=""></div>
-                                <div><a class="extra-details" href="#">לפרטים נוספים<span class="rotate">∴</span></a></div>
-                            </div>
-                            <div id="second-interval">
-                                <div><h2>שטחי מסחר פז סנטר</h2></div>
-                                <div><img src="images/images/paz_250x110103131473.jpg" alt=""></div>
-                                <div><a class="extra-details" href="#">לפרטים נוספים<span class="rotate">∴</span></a></div>
+            <div class="aside-form">
+                <div class="site-tree"><a href="#">עמוד הבית</a><span> > </span><span>צור קשר</span></div>
+                    
+                    <h3>צור קשר</h3>
+                    <div class="form">
+                        <div>
+                            <div>
+                                <h3>צור קשר</h3>
+                                <p>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :
+                                    * השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-33">
-                    <div class="content">
-                        <div class="reduced-size-content">
-                            <div><h2>התחנות שלנו בדרך שלך</h2></div>
-                            <div class="israel-Regions">
-                                <div>
-                                    <div><img class="israel-map" src="images/images/map-transparent.png" alt=""></div>
-                                </div>
-                                <div class="oo"></div>
-                                <div class="col-content-israel-Regions">
-                                    <div><a class="extra-details" href="#">צפון<span class="rotate">∴</span></a></div> 
-                                    <div><a class="extra-details" href="#">מרכז<span class="rotate">∴</span></a></div> 
-                                    <div><a class="extra-details" href="#">דרום<span class="rotate">∴</span></a></div> 
-                                </div>       
-                            </div>
-                         </div>
-                     </div>
-                </div>
             </div>
-        </section>
+            
+            <div class="aside-contact">dfgdfgdrfg</div>
+        </aside>
 
         <footer>
             <nav>
-                <ul>
-                    <li><a href="#"><img src="images/images/fb_icon.png" alt=""></a></li>
-                    <li><a href="#">עמוד הבית</a></li>
-                    <li><a href="#">מחירונים</a></li>
-                    <li><a href="#">קריירה</a></li>
-                    <li><a href="#">תנאי שימוש</a></li>
-                    <li><a href="#">נגישות</a></li>
-                    <li><a href="#">מפת האתר</a></li>
-                    <li><a href="#">צור קשר</a></li>
-                    <li><a href="#">שטחי מחסר</a></li>
-                    <li><a href="#">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
-                </ul>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="#"><img src="images/images/fb_icon.png" alt=""></a></li>
+                        <li><a href="">עמוד הבית</a></li>
+                        <li><a href="">מחירונים</a></li>
+                        <li><a href="">קריירה</a></li>
+                        <li><a href="">תנאי שימוש</a></li>
+                        <li><a href="">נגישות</a></li>
+                        <li><a href="">מפת האתר</a></li>
+                        <li><a href="">תור קשר</a></li>
+                        <li><a href="">שטחי מחסר</a></li>
+                        <li><a href="">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+                    </ul>
+                </div>
             </nav>
         </footer>
-
     </main>
 </body>
 </html>
