@@ -410,7 +410,7 @@ footer nav ul li a:hover{
 
 
 aside{
-    border: solid 2px black;
+    /* border: solid 2px black; */
     width: 900px;
     margin-top: 32px;
     height: 426px;
@@ -419,7 +419,8 @@ aside{
     display: flex;
     justify-content: center;
     color: black;
-    background-color: brown;
+    /* background-color: brown; */
+    font-family: 'Arial (Hebrew)', Arial;
 }
 
 
@@ -429,7 +430,7 @@ aside a{
 
 
 aside div{
-    border: solid red 2px;
+    /* border: solid red 2px; */
     color: black;
 }
 
@@ -461,8 +462,15 @@ width: 293px;
 .site-tree a{
   font-weight: lighter;
   font-size: 12px;
-    color: black;
+    color: #5c5c5c;
     padding: 0 0 14px 14px;
+    display: inline-block;
+}
+.span-font{
+    font-weight: lighter;
+    font-size: 12px;
+      color: #5c5c5c;
+      padding: 0 0 14px 14px;
 }
 
 h3{
@@ -478,15 +486,119 @@ border-bottom: solid 1px gray;
 }
 
 h3{
-    color: black;
+    color:#72716d;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 20px;
+    color: #005ca0;
+    font-size: 15px;
+    
 }
 
 
 
+.bold-text{
+    color: #6d6d6d;
+    font-weight: bold;
+}
+
 .form div div p{
-    color: black;
+    color: #6d6d6d;
 }
 
 .form div div{
     padding-right: 20px;
+    padding-top: 6px;
+}
+
+.form-content{
+    padding: 5px 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.form-content div{
+    padding: 5px;
+
+}
+
+.form-button{
+    width: 40px;
+    background-color: #005CA0;
+}
+
+.form-content input{
+    color: black;
+}
+
+.form-content textarea{
+    color: black;
+}
+
+.form-content label{
+    color: #6D6D6D;
+    font-size: 13px;
+}
+
+
+
+ /* error display for Email */
+/* .form-submitted input:valid{      
+    border: green solid;
+ }
+ 
+ .form-submitted input:invalid{
+     border: red solid;
+  }
+ 
+  .error{
+      display: none;
+      color: red;
+  }
+ 
+ .form-submitted input:invalid ~ .error{
+     display: inline;
+ } */
+
+
+ .empty-space{
+     margin-top: 53px;
+ }
+
+
+.contact-info{
+    margin: 11px 6px 4px 69px;
+    height: 150px;
+    width: 280px;
+    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    border-top-right-radius: 40px;
+    
+}
+
+.more-details-paz{
+    margin: 20px 6px 0 69px;
+    height: 150px;
+    width: 280px;
+    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    border-top-right-radius: 40px;
+}
+
+.contact-info-content{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
+.more-details-paz-content{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.press-here-link{
+    color: blue;
+    padding:0;
 }
