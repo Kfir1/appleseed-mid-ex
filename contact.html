@@ -209,12 +209,11 @@
                                     <div>
                                         <label for="email">*E-mail</label>       <!--   "for" and "id" must be the same to make relation between label and input -->
                                         <input type="email" id="email" maxlength="30">
-                                        <!-- <span class="error">לא תקין</span> -->
                                     </div>
                                     <div>
                                         <textarea id="writing-field" rows="4" cols="15" maxlength="40" placeholder="תוכן הפנייה"></textarea>  <!--"rows""cols" describes the field area. "maxlength" max allowed letters-->
                                     </div>
-                                    <button type="button" class="form-button">שלח</button>
+                                    <button type="button" class="form-button" onclick="submittedForm()">שלח</button>
                              </div>
                         </div>
                     </div>

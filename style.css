@@ -368,7 +368,10 @@ div .extra-details .rotate:hover{
  #second-interval{
      display: none;
  }
-
+ 
+ #third-interval{
+    display: none;
+ }
 
  .israel-map{
     float: left;
@@ -484,7 +487,7 @@ width: 293px;
 .arrow-pic{
     height: 9px;
     position: absolute;
-    top: 165px;
+    top: 160px;
 }
 
 .site-tree a{
