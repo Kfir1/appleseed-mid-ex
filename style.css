@@ -332,13 +332,9 @@ padding-top: 5%;
       color: rgb(92, 85, 85);
       font-weight: lighter;
       text-decoration: underline;
+      float: left;
     
 }
-
-
-/* .row .col-33 .content .reduced-size-content div .extra-details:last-child{
-    float: right;
-} */
 
 
  /* .extra-details  .rotate -> ∴ */
@@ -375,6 +371,33 @@ div .extra-details .rotate:hover{
     max-height: 170px;
 
  }
+
+.reduced-size-content .israel-Regions .col-content-israel-Regions .north-mid-south{
+    color: rgb(92, 85, 85);
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+
+
+.north-mid-south .rotate{
+    color: orange;
+    font-size: 19px;
+}
+
+.north-mid-south:hover{
+   text-decoration: underline;
+   color: rgb(22, 73, 107);
+}
+
+div .north-mid-south .rotate:hover{
+   text-decoration: underline;
+   color: rgb(22, 73, 107);
+}
+
+
+
+
 
 
 footer{
