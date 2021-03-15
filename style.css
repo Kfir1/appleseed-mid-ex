@@ -147,6 +147,11 @@ a{
 background: linear-gradient(180deg,rgba(143,143,143,1) 69%, rgba(161,161,161,1) 85%);
 }
 
+.drop-down-content ul li{
+    border-bottom: solid white 1px;
+}
+
+
 .english-button{
     background-color: transparent;
     color: white;
@@ -517,7 +522,7 @@ h4{
     font-size: 20px;
     color: #005ca0;
     font-size: 15px;
-    
+    padding-top: 10px;
 }
 
 

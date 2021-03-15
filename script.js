@@ -1,6 +1,6 @@
 setInterval(function () { 
     if(document.getElementById("interval").style.display === 'none') {
-        document.getElementById("interval").style.display = "flex";
+        document.getElementById("interval").style.display = "block";
         document.getElementById('second-interval').style.display = "none";  
     }
     else{
@@ -11,3 +11,4 @@ setInterval(function () {
     
 
 },1000);
+
