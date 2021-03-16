@@ -1,16 +1,30 @@
-setInterval(function () { 
-    if(document.getElementById("interval").style.display === 'none') {
-        document.getElementById("interval").style.display = "block";
-        document.getElementById('second-interval').style.display = "none";  
-    }
-    else{
-        document.getElementById("interval").style.display = "none";
-        document.getElementById('second-interval').style.display = "flex";  
-        document.getElementById('second-interval').style.flexDirection = "column";  
-    }
+var arrayIndex = 0;
+var intervals = ["interval", "second-interval", "third-interval"];
+setInterval(() => { 
+    console.log(arrayIndex);
+    document.getElementById(intervals[arrayIndex]).style.display = "none";
+    arrayIndex ++;
+    if(arrayIndex === 3) arrayIndex = 0;
+    document.getElementById(intervals[arrayIndex]).style.display = "block";
+}, 2000);
+
+
+
+
+// setInterval(function () { 
+//     if(document.getElementById("interval").style.display === 'none') {
+//         document.getElementById("interval").style.display = "block";
+//         document.getElementById('second-interval').style.display = "none";  
+//     }
+//     else{
+//         document.getElementById("interval").style.display = "none";
+//         document.getElementById('second-interval').style.display = "flex";  
+//         document.getElementById('second-interval').style.flexDirection = "column";  
+//     }
   
 
-},2000);
+// },2000);
+
 
 
 
@@ -61,6 +75,7 @@ setInterval(function () {
 
 
 
+// infinite loop fail___________
 
 // setInterval (function () {
 // var intervals = ["interval", "second-interval", "third-interval"];

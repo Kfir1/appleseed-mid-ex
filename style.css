@@ -74,7 +74,7 @@ section{
 }
 
 
-header > nav{
+header nav{
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
@@ -339,6 +339,7 @@ padding-top: 5%;
       font-weight: lighter;
       text-decoration: underline;
       float: left;
+      padding-left: 0;
     
 }
 
@@ -347,15 +348,16 @@ padding-top: 5%;
  .extra-details  .rotate{
      color: orange;
      font-size: 19px;
+     font-weight: bold;
  }
 
  .extra-details:hover{
-    text-decoration: underline;
+   
     color: rgb(22, 73, 107);
  }
 
 div .extra-details .rotate:hover{
-    text-decoration: underline;
+   
     color: rgb(22, 73, 107);
  }
 /* not working */
@@ -392,20 +394,19 @@ div .extra-details .rotate:hover{
 .north-mid-south .rotate{
     color: orange;
     font-size: 19px;
+    font-weight: bold;
 }
 
-.north-mid-south:hover{
-   text-decoration: underline;
+
+.col-content-israel-Regions .north-mid-south:hover{
+ 
    color: rgb(22, 73, 107);
 }
 
 div .north-mid-south .rotate:hover{
-   text-decoration: underline;
+
    color: rgb(22, 73, 107);
 }
-
-
-
 
 
 
@@ -551,19 +552,25 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     
 }
 
 .form-content > div{
     padding: 5px;
-
 }
 
+.form-content > div > label{
+    text-align: right;
+    display: inline-block;
+ 
+}
 
 
 .form-button{
     width: 40px;
     background-color: #005CA0;
+    margin-left: 5px;
 }
 
 .form-content input{
