@@ -69,12 +69,12 @@ section{
     /* padding: 1%; */
     padding: 10px;
 }
-.row .col-33 .content{
+.row .col-33 > .content{
     width: 33.33%;
 }
 
 
-header nav{
+header > nav{
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
@@ -513,7 +513,7 @@ border-bottom: solid 1px gray;
 .form{
     margin: 11px 6px 0 69px;
     height: 335px;
-    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    background: linear-gradient(90deg , rgba(235,235,235,1) 0%, rgba(232,232,232,1) 71%);
     border-top-right-radius: 40px;
 }
 
@@ -527,6 +527,7 @@ h4{
     color: #005ca0;
     font-size: 15px;
     padding-top: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -553,10 +554,12 @@ h4{
     
 }
 
-.form-content div{
+.form-content > div{
     padding: 5px;
 
 }
+
+
 
 .form-button{
     width: 40px;
@@ -606,7 +609,7 @@ h4{
     margin: 11px 6px 4px 69px;
     height: 150px;
     width: 280px;
-    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    background: linear-gradient(90deg , rgba(235,235,235,1) 0%, rgba(232,232,232,1) 71%);
     border-top-right-radius: 40px;
     
 }
@@ -615,7 +618,9 @@ h4{
     margin: 20px 6px 0 69px;
     height: 150px;
     width: 280px;
-    background: linear-gradient(360deg, rgba(177,177,177,1) 5%, rgba(232,232,232,1) 71%);
+    background: linear-gradient(
+        90deg
+        , rgba(235,235,235,1) 0%, rgba(232,232,232,1) 71%);
     border-top-right-radius: 40px;
 }
 
