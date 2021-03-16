@@ -299,11 +299,11 @@ p{
 }
 
 
-/* 3 dots rotation not working */
+
 .rotate{
     transform: rotate(270deg);
     display: inline-block;    /* without in line block it will not rotate */
-    
+    margin-right: 2px;
 } 
 
 
@@ -349,6 +349,7 @@ padding-top: 5%;
      color: orange;
      font-size: 19px;
      font-weight: bold;
+    
  }
 
  .extra-details:hover{
@@ -560,8 +561,9 @@ h4{
     padding: 5px;
 }
 
+/* align text of labels */
 .form-content > div > label{
-    text-align: right;
+    width: 87px;
     display: inline-block;
  
 }
@@ -645,4 +647,10 @@ h4{
 .press-here-link{
     color: blue;
     padding:0;
+    font-size: 13px;
+}
+
+.textarea{
+    width: 260px;
+    height: 77px;
 }
