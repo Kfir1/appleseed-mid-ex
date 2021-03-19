@@ -113,6 +113,7 @@ a{
     /* background-color: blue; */
     height: 100%;        /*full height of -li-*/
     padding: 14px;
+    white-space: nowrap;
     
 }
 
