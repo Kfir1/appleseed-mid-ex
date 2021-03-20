@@ -82,16 +82,23 @@ header nav{
 }
 
 header nav ul{
-  
+    margin: 0;
+    padding: 0;
     display: flex;
     list-style-type: none;
     z-index: 999999999;   /* fixed menu behind pics problem */
 }
 
 header nav ul li{
-    
+    list-style-type: none;
+    display: inline;
     border-right: solid white 1px; 
 }
+
+header nav ul li:not(:first-child):before {
+    /* content: " | "; */
+}
+
 
 .drop-down-content ul{
     display: flex;
@@ -118,13 +125,17 @@ a{
 }
 
 
-
-
 .drop-down-content{
     display: none;
     z-index: 666;
     position: absolute;     /* fix drop down menu not starting from start of the parent */
 }
+
+
+.drop-down-content > ul > li > a{
+    padding: 5px 24px;
+}
+
 
 .drop-down:hover > .drop-down-content{
     display: block;
